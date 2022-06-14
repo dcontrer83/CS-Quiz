@@ -1,0 +1,185 @@
+h1 {
+    text-align: center;
+}
+
+#title {
+    font-size: 100px;
+}
+
+#textStart {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-style: double;
+    border-width: 20px;
+    font-size: 31px;
+    margin-right: 20%;
+    margin-left: 20%;
+    padding: 10px;
+}
+
+
+.startButton {
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+    width: 100px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#pFirstQ {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 10%;
+    align-items: center;
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    border-style: double;
+    border-width: 20px;
+    padding: 20px;
+}
+
+.buttonFirst {
+    font-weight: bold;
+    width: 90%;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+#pSecondQ {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 10%;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    border-style: double;
+    border-width: 20px;
+    padding: 20px;
+}
+
+.buttonSecond {
+    font-weight: bold;
+    width: 90%;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+#pThirdQ {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 10%;
+    align-items: center;
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    border-style: double;
+    border-width: 20px;
+    padding: 20px;
+}
+
+.buttonThird {
+    font-weight: bold;
+    width: 90%;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+#pFourthQ {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 10%;
+    align-items: center;
+    text-align: center;
+    font-size: 54px;
+    font-weight: bold;
+    border-style: double;
+    border-width: 20px;
+    padding: 20px;
+}
+
+.buttonFourth {
+    font-weight: bold;
+    width: 90%;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+#pFifthQ {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 10%;
+    align-items: center;
+    text-align: center;
+    font-size: 59px;
+    font-weight: bold;
+    border-style: double;
+    border-width: 20px;
+    padding: 20px;
+}
+
+.buttonFifth {
+    font-weight: bold;
+    width: 90%;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.store {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+    margin-left: 20%;
+    align-items: center;
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+    border-style: double;
+    border-width: 20px;
+    padding: 20px;
+}
+
+#idInput {
+    width: 95%;
+    height: 30px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#submitOnce {
+    width: 12%;
+    height: 30px;
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: darkgreen;
+}
+
+.pScores {
+    font-size: 28px;
+    margin: 10px;
+}
+
+.timer {
+    color: red;
+}
