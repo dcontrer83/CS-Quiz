@@ -40,6 +40,7 @@ var p = document.createElement("p");
 submit.setAttribute("id", "submitOnce");
 userInput.setAttribute("id", "idInput");
 
+//used so users cannot put numbers as their name
 const regex = /[0-9]/g;
 
 var isCorrect = true;
@@ -51,8 +52,8 @@ highScore.textContent = "";
 
 firstPage();
 
+//start with first page being instructions and start button
 function firstPage() {
-
 
     p.setAttribute("id", "textStart");
 
@@ -68,6 +69,7 @@ function firstPage() {
 
 }
 
+//when user click starts the timer starts and first question page shows
 startButton.addEventListener("click", function() {
     setTime();
     startQuiz.textContent = "";
@@ -75,6 +77,7 @@ startButton.addEventListener("click", function() {
 
 });
 
+//first question page 
 function firstQuestionFunction() {
     
     h1.textContent = "";
@@ -100,6 +103,7 @@ function firstQuestionFunction() {
     multipleChoiceButtonC1.textContent = "C) HyperText Markup Language";
     multipleChoiceButtonD1.textContent = "D) High Texture Markup Language";
 
+    //user can only click button and will then move on the second question page (if right +10 points if wrong -20 seconds)
     multipleChoiceButtonA1.addEventListener("click", function(event) {
         firstQuestion.textContent = "";
         isCorrect = false;
@@ -135,6 +139,7 @@ function firstQuestionFunction() {
     return;
 };
 
+//second question page
 function secondQuestionFunction() {
 
     p.setAttribute("id", "pSecondQ");
@@ -158,6 +163,7 @@ function secondQuestionFunction() {
     multipleChoiceButtonC2.textContent = "C) Chocolate Sprinkles Strawberries";
     multipleChoiceButtonD2.textContent = "D) Cascading Style Sheets";
 
+    //shows if previous answer was right or wrong for 1 second
     if (isCorrect ) {
         end.textContent = "Correct";
     }
@@ -202,6 +208,7 @@ multipleChoiceButtonD2.addEventListener("click", function(event) {
     return;
 };
 
+//third question page
 function thirdQuestionFunction() {
 
     p.setAttribute("id", "pThirdQ");
@@ -268,6 +275,7 @@ function thirdQuestionFunction() {
     })
 }
 
+//fourth question page
 function fourthQuestionFunction() {
 
     p.setAttribute("id", "pFourthQ");
@@ -335,6 +343,8 @@ function fourthQuestionFunction() {
     
 }
 
+
+//fifth question page
 function fifthQuestionFunction() {
 
     p.setAttribute("id", "pFifthQ");
@@ -401,7 +411,7 @@ function fifthQuestionFunction() {
     })
 }
 
-
+//highscore page
 function highscoreFunction() {
     if (secondsLeft !== 0) {
         clearInterval(timerInterval);
@@ -438,8 +448,10 @@ function highscoreFunction() {
     submit.addEventListener("click", function(event) {
         event.preventDefault();
 
+        //user cannot use numbers
         if (!userInput.value.match(regex)) {
 
+        //once user types valid name, then button is disabled so they cannot put multiple names for one quiz score
         document.getElementById("submitOnce").disabled = true;
 
         var userText = userInput.value.trim();
@@ -478,6 +490,7 @@ function isCorrectFunction() {
 
 var timerInterval;
 
+//timer counts down every second 
 function setTime() {
      timerInterval = setInterval(function() {
         secondsLeft--;
@@ -504,6 +517,7 @@ var arrayThirty = [];
 var arrayFourty = [];
 var arrayFifty = [];
 
+//organizes highscore from highest to lowest (50 - 0)
 function addUserInputs() {
     for (let i = 0; i < arrayUser.length; i++) {
         var user = arrayUser[i];
